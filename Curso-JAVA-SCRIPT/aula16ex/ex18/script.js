@@ -1,7 +1,7 @@
 let NUM = []
 var resultado = document.querySelector('div#res')
 
-function adicionar(){
+const adicionar = () => {
     resultado.innerHTML=''
     var res = document.getElementById('dados')
     let N = document.getElementById('Num')
@@ -33,7 +33,7 @@ function adicionar(){
     N.focus() // para focar na barra de adicionar 
 }
 
-function finalizar(){
+const finalizar = () => {
     let pos = NUM.length
     let maior = Math.max(...NUM)
     let menor = Math.min(...NUM)
